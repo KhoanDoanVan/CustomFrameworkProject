@@ -12,6 +12,7 @@
 		46D19BB72CA6FD53007DB804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D19BB62CA6FD53007DB804 /* Assets.xcassets */; };
 		46D19BBA2CA6FD53007DB804 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D19BB92CA6FD53007DB804 /* Preview Assets.xcassets */; };
 		46D19BC12CA6FD8D007DB804 /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D19BC02CA6FD8D007DB804 /* SDK.swift */; };
+		46D19BC42CA70370007DB804 /* CustomFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 46D19BC32CA70370007DB804 /* CustomFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D19BC42CA70370007DB804 /* CustomFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = CustomFrameworkProject;
+			packageProductDependencies = (
+				46D19BC32CA70370007DB804 /* CustomFramework */,
+			);
 			productName = CustomFrameworkProject;
 			productReference = 46D19BAF2CA6FD51007DB804 /* CustomFrameworkProject.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 46D19BA62CA6FD51007DB804;
+			packageReferences = (
+				46D19BC22CA70370007DB804 /* XCRemoteSwiftPackageReference "CustomFramework" */,
+			);
 			productRefGroup = 46D19BB02CA6FD51007DB804 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CustomFrameworkProject/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CustomFrameworkProject/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -346,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46D19BC22CA70370007DB804 /* XCRemoteSwiftPackageReference "CustomFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KhoanDoanVan/CustomFramework.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46D19BC32CA70370007DB804 /* CustomFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46D19BC22CA70370007DB804 /* XCRemoteSwiftPackageReference "CustomFramework" */;
+			productName = CustomFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46D19BA72CA6FD51007DB804 /* Project object */;
 }

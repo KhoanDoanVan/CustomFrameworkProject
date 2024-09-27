@@ -1,0 +1,15 @@
+{
+  "originHash" : "93a4bae05d6141fbf94fb5bb46401858938ee8cc926835cde8ca3d9f61fc2cd8",
+  "pins" : [
+    {
+      "identity" : "customframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KhoanDoanVan/CustomFramework.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8cf08b5d3a96ab51fef13ceb0ed415b65e5b54f2"
+      }
+    }
+  ],
+  "version" : 3
+}
